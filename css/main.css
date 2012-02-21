@@ -261,9 +261,10 @@ ul#menu li.current a {
 }
 
 #footer {
+  margin: auto;
   border-top: 1px solid #8b7355;
   text-align: center;
-  width: 800px;}
+  width: 85%;}
 #footer a {
   color: #262626;
   text-shadow: none;
