@@ -24,8 +24,8 @@
 
 body  {
   background: url('../images/background.png');
-  color: #fff;
-  font: 13px "Lucida Grande", Verdana;
+  color: #8b7355;
+  font: 13px "AlexandriaFLF", Verdana;
   padding-left: 0;
   margin-left: 0;}
 
@@ -150,18 +150,6 @@ body  {
   display: block;
   font-size: 11px;
   margin-top: 5px;}
-#google-subscribe-link {
-  border-bottom-width: 0 !important; }
-#google-subscribe-input {
-  opacity: 0.8; }
-#google-subscribe-input.focus {
-  opacity: 1; }
-#google-members-count {
-  position: relative;
-  left: 10px;
-  bottom: 11px;
-  color: #eee;
-  font-size: 11px; }
 
 /* menu */
 
@@ -273,12 +261,13 @@ ul#menu li.current a {
 }
 
 #footer {
+  border-top: 1px solid #8b7355;
   text-align: center;
   width: 800px;}
 #footer a {
-  color: #E2E7D7;
+  color: #262626;
   text-shadow: none;
   text-decoration: none;
-  border-bottom: 1px dotted #E2E7D7;}
+  border-bottom: 1px dotted #262626;}
 #footer a:hover {
   border-bottom-style: solid;}
