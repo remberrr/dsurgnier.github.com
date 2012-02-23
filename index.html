@@ -3,6 +3,10 @@
     <title>Danni Surgnier</title>
     <meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
     <link href='css/main.css', rel='stylesheet', media='all'>
+    <script src='js/jquery-1.7.1.min.js'></script>
+    <script src='js/underscore-min.js'></script>
+    <script src='js/backbone-min.js'></script>
+    <script src='js/danni.js'></script>
   </head>
   <body>
     <div id='header'>
@@ -28,40 +32,7 @@
           </li>
         </ul>
       </div>
-      <div class='page page-active', id='page-home'>
-        <div class='section'>
-          <div class='title'>Home</div>
-          <div class='subtitle'>subtitle</div>
-          <p>some text</p>
-        </div>
-      </div>
-      <div class='page', id='page-pictures'>
-        <div class='section'>
-          <div class='title'>Pictures</div>
-          <div class='subtitle'>subtitle</div>
-          <p>some text</p>
-        </div>
-      </div>
-      <div class='page', id='page-designs'>
-        <div class='section'>
-          <div class='title'>Designs</div>
-          <div class='subtitle'>subtitle</div>
-          <p>some text</p>
-        </div>
-      </div>
-      <div class='page', id='page-about'>
-        <div class='section'>
-          <div class='title'>About</div>
-          <div class='subtitle'>subtitle</div>
-          <p>some text</p>
-        </div>
-      </div>
-      <div class='page', id='page-resume'>
-        <div class='section'>
-          <div class='title'>Resume</div>
-          <div class='subtitle'>subtitle</div>
-          <p>some text</p>
-        </div>
+      <div id='page'>
       </div>
     </div>
     <div id='footer'>
@@ -73,6 +44,15 @@
         .
       </p>
     </div>
+
+    <!--   Templates  -->
+    <script type='text/template' id='home-template'>
+      <div class='section'>
+        <div class='title'>Home</div>
+        <div class='subtitle'>subtitle</div>
+        <p>some text</p>
+      </div>
+    </script>
   </body>
 </html>
 
