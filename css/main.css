@@ -173,10 +173,11 @@ ul#menu li.current a {
   font-size: 14px !important;
 }
 
+/*
 .page {
   display: none;
 }
-
+*/
 .page-active {
   display: block;
 }
