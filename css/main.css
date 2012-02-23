@@ -44,6 +44,7 @@ body  {
   text-align: center;
   /*font: 45px "AlexandriaFLF", Helvetica;*/
   font-size: 45px;
+  line-height: 50px;
   color: #8b7355;
 }
 #header .subtext {
