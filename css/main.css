@@ -25,7 +25,10 @@
 body  {
   background: url('../images/background.png');
   color: #8b7355;
-  font: 13px "AlexandriaFLF", Helvetica;
+  /*font: 13px "AlexandriaFLF", Helvetica;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   padding-left: 0;
   margin-left: 0;
 }
@@ -39,12 +42,13 @@ body  {
 }
 #header .title {
   text-align: center;
-  font: 45px "AlexandriaFLF", Helvetica;
+  /*font: 45px "AlexandriaFLF", Helvetica;*/
+  font-size: 45px;
   color: #8b7355;
 }
 #header .subtext {
-  /*font: 30px "OFLSortsMillGoudyItalic";*/
-  font: 30px "AlexandriaFLF", Helvetica;
+  /*font: 30px "AlexandriaFLF", Helvetica;*/
+  font-size: 30px;
   text-shadow: 0 1px 0 #000;
   left: 50px;
   top: 58px;
@@ -93,7 +97,9 @@ ul#nav-menu li a {
   text-decoration: none;
   border-width: 0;
   padding: 8px 15px;
-  font: bold 14px "AlexandriaFLF", Helvetica;
+  /*font: bold 14px "AlexandriaFLF", Helvetica;*/
+  font-weight: bold;
+  font-size: 14px;
 }
 ul#nav-menu li a {
   color: #ccc;
@@ -126,7 +132,9 @@ ul#resume-menu li a {
   text-decoration: none;
   border-width: 0;
   padding: 8px 15px;
-  font: bold 14px "AlexandriaFLF", Helvetica;
+  /*font: bold 14px "AlexandriaFLF", Helvetica;*/
+  font-weight: bold;
+  font-size: 14px;
 }
 ul#resume-menu li a {
   color: #ccc;
@@ -177,3 +185,4 @@ ul#resume-menu li.current a {
 #footer a:hover {
   border-bottom-style: solid;
 }
+

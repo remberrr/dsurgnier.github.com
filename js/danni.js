@@ -221,7 +221,6 @@ $(function(){
   });
 
 
-
   window.workspace = new Workspace();
   Backbone.history.start();
   //Router.navigate();

@@ -11,6 +11,8 @@
     <script src='js/jquery-1.7.1.min.js'></script>
     <script src='js/underscore-min.js'></script>
     <script src='js/backbone-min.js'></script>
+    <script src='js/bootstrap-transition.js'></script>
+    <script src='js/bootstrap-modal.js'></script>
     <script src='js/danni.js'></script>
 
     <!--<link rel='shortcut icon' href='images/favicon.ico'>-->
@@ -104,34 +106,96 @@
 
     <!--   displays  -->
     <script type='text/template' id='displays-template'>
+      <!--modal content-->
+      <div id='palazzo-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/Palazzo.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+      <div id='dress-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/Dress.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+      <div id='infinityscarf-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/InfinityScarf.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+      <div id='prairie-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/Prairie.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+      <div id='scarf-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/Scarf.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+      <div id='sweater-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Window display at Anthropolgie</h3>
+        </div>
+        <div class='modal-body'><img src='images/Sweater.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the photo</h4>
+        </div>
+      </div>
+
       <ul class='thumbnails'>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#palazzo-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Palazzo.jpg'>
           </a>
         </li>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#dress-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Dress.jpg'>
           </a>
         </li>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#infinityscarf-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/InfinityScarf.jpg'>
           </a>
         </li>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#prairie-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Prairie.jpg'>
           </a>
         </li>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#scarf-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Scarf.jpg'>
           </a>
         </li>
         <li class='span4'>
-          <a href='#' class='thumbnail'>
+          <a href='#sweater-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Sweater.jpg'>
           </a>
         </li>
@@ -140,54 +204,156 @@
 
     <!--   Designs  -->
     <script type='text/template' id='designs-template'>
+      <!--modal content-->
+      <div id='girls1-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girls1.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girls2-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girls2.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girls3-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girls3.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girls4-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girls4.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl1-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl1.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl2-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl2.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl3-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl3.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl4-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl4.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+      <div id='girl5-modal' class='modal hide fade'>
+        <div class='modal-header'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <h3>Hand Drawn Title</h3>
+        </div>
+        <div class='modal-body'><img src='images/Girl5.jpg'></div>
+        <div class='modal-footer'>
+          <h4>Comments about the drawing</h4>
+        </div>
+      </div>
+
       <ul class='thumbnails'>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girls1-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girls1.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girls2-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girls2.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girls3-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girls3.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girls4-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girls4.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl1-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl1.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl2-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl2.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl3-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl3.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl4-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl4.jpg'>
           </a>
         </li>
         <li class='span3'>
-          <a href='#' class='thumbnail'>
+          <a href='#girl5-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girl5.jpg'>
           </a>
         </li>
