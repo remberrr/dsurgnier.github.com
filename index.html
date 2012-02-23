@@ -2,51 +2,74 @@
   <head>
     <title>Danni Surgnier</title>
     <meta http-equiv='Content-Type' content='text/html;charset=utf-8'>
-    <link href='css/main.css', rel='stylesheet', media='all'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='my portfolio'>
+    <meta name='author' content='Danni Surgnier'>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href='css/bootstrap-responsive.min.css' rel='stylesheet'>
+    <link href='css/main.css' rel='stylesheet' media='all'>
     <script src='js/jquery-1.7.1.min.js'></script>
     <script src='js/underscore-min.js'></script>
     <script src='js/backbone-min.js'></script>
     <script src='js/danni.js'></script>
+
+    <!--<link rel='shortcut icon' href='images/favicon.ico'>-->
   </head>
   <body>
-    <div id='header'>
-      <div class='title'>Danni Surgnier</div>
-    </div>
-    <div id='content'>
-      <div class='nav'>
-        <ul id='menu'>
-          <li class='current', id='menu-home'>
-            <a href='#home'>Home</a>
-          </li>
-          <li id='menu-pictures'>
-            <a href='#pictures'>Pictures</a>
-          </li>
-          <li id='menu-designs'>
-            <a href='#designs'>Designs</a>
-          </li>
-          <li id='menu-about'>
-            <a href='#about'>About</a>
-          </li>
-          <li id='menu-resume'>
-            <a href='#resume'>Resume</a>
-          </li>
-        </ul>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <div id='header'>
+            <div class='title'>Danni Surgnier</div>
+          </div>
+        </div>
       </div>
-      <div id='page'>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <ul id='menu'>
+            <li class='current', id='menu-home'>
+              <a href='#home'>Home</a>
+            </li>
+            <li id='menu-pictures'>
+              <a href='#pictures'>Pictures</a>
+            </li>
+            <li id='menu-designs'>
+              <a href='#designs'>Designs</a>
+            </li>
+            <li id='menu-about'>
+              <a href='#about'>About</a>
+            </li>
+            <li id='menu-resume'>
+              <a href='#resume'>Resume</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id='footer'>
-      <p>
-        Copyright &copy
-        <a href="http://www.dannisurgnier.com">dannisurgnier.com</a>
-        2012. All rights reserved. Code is freely available at
-        <a href="https://github.com/dsurgnier">github</a>
-        .
-      </p>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <div id='page'>
+          </div>
+        </div>
+      </div>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <div id='footer'>
+            <p>
+              Copyright &copy
+              <a href="http://www.dannisurgnier.com">dannisurgnier.com</a>
+              2012. All rights reserved. Code is freely available at
+              <a href="https://github.com/dsurgnier">github</a>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
     <!--   Templates  -->
+
+    <!--   Home  -->
     <script type='text/template' id='home-template'>
       <div class='section'>
         <div class='title'>Home</div>
@@ -55,14 +78,168 @@
       </div>
     </script>
 
-    <script type='text/template' id='pictures-template'>
-      <div class='section'>
-        <div class='title'>Pictures</div>
-        <div class='subtitle'>subtitle</div>
-        <p>some text</p>
+    <!--   About  -->
+    <script type='text/template' id='about-template'>
+      <div class='row-fluid'>
+        <div class='span4'><p></p></div>
+        <div class='span4'>
+          <h2>Hello and welcome to my website!</h2>
+          <p>My name is Danni Surgnier, I'm an Auburn Univerity Alum with a B.S. in Apparel Merchandising, Design and Production Management with a focus in design. I'm a native Oregonian but spent my high school and college years in Alabama. I'm extremely happy to be back home and love living in NE Portland with my husband, cat, and dog.</p>
+        </div>
+        <div class='span4'><p></p></div>
+      </div>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <ul class='thumbnails'>
+            <li class='span6'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Os.jpg'>
+              </a>
+            </li>
+            <li class='span6'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/kitty.jpg'>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </script>
 
+    <!--   Pictures  -->
+    <script type='text/template' id='pictures-template'>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <ul class='thumbnails'>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Palazzo.jpg'>
+              </a>
+            </li>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Dress.jpg'>
+              </a>
+            </li>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/InfinityScarf.jpg'>
+              </a>
+            </li>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Prairie.jpg'>
+              </a>
+            </li>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Scarf.jpg'>
+              </a>
+            </li>
+            <li class='span4'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Sweater.jpg'>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <!--   Designs  -->
+    <script type='text/template' id='designs-template'>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <ul class='thumbnails'>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girls1.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girls2.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girls3.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girls4.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl1.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl2.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl3.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl4.jpg'>
+              </a>
+            </li>
+            <li class='span3'>
+              <a href='#' class='thumbnail'>
+                <img src='images/thumbs/Girl5.jpg'>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <!--   Resume  -->
+    <script type='text/template' id='resume-template'>
+      <div class='row-fluid'>
+        <div class='span12'>
+          <div class='tabbable tabs-left'>
+            <ul class='nav nav-tabs'>
+              <li class='active'><a href='#education' data-toggle='tab'>Education</a></li>
+              <li><a href='#employment' data-toggle='tab'>Employment</a></li>
+              <li><a href='#skills' data-toggle='tab'>Skills</a></li>
+              <li><a href='#coursework' data-toggle='tab'>Coursework</a></li>
+            </ul>
+            <div class='tab-content'>
+              <div class='tab-pane active' id='education'>
+                <h2>Education</h2>
+                <p>Auburn University, Auburn AL</p>
+                <p>May 2006 - August 2010</p>
+              </div>
+              <div class='tab-pane' id='employment'>
+                <h2>Employment</h2>
+                <h3>Sr. Associate / Standards Specialist</h3>
+                <p>May 2011-Current Anthropologie, 1115 NW Couch</p>
+                <p>Assist in opening and merchandising the home and apparel departments of Anthropologie, help create maintain visual displays, and assist customers on floor and at register.</p>
+              </div>
+              <div class='tab-pane' id='skills'>
+                <h2>Skills</h2>
+              </div>
+              <div class='tab-pane' id='coursework'>
+                <h2>Coursework</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
   </body>
 </html>
 
