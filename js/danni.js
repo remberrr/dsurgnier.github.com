@@ -6,7 +6,7 @@ $(function(){
     routes: {
       '':         'toHome',
       'home':     'toHome',
-      'pictures': 'toPictures',
+      'displays': 'toDisplays',
       'designs':  'toDesigns',
       'about':    'toAbout',
       'resume':   'toResume',
@@ -18,13 +18,17 @@ $(function(){
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+      $('#nav-menu li').removeClass('current');
+      $('#nav-home').addClass('current');
     },
 
-    toPictures: function(){
-      var view = new PicturesView;
+    toDisplays: function(){
+      var view = new DisplaysView;
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+      $('#nav-menu li').removeClass('current');
+      $('#nav-displays').addClass('current');
     },
 
     toDesigns: function(){
@@ -32,6 +36,8 @@ $(function(){
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+      $('#nav-menu li').removeClass('current');
+      $('#nav-designs').addClass('current');
     },
 
     toAbout: function(){
@@ -39,6 +45,8 @@ $(function(){
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+      $('#nav-menu li').removeClass('current');
+      $('#nav-about').addClass('current');
     },
     
     toResume: function(){
@@ -46,6 +54,8 @@ $(function(){
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+      $('#nav-menu li').removeClass('current');
+      $('#nav-resume').addClass('current');
 
       var default_view = new EducationView;
       $('#resume-content').hide();
@@ -118,12 +128,12 @@ $(function(){
     }
   });
 
-  window.PicturesView = Backbone.View.extend({
+  window.DisplaysView = Backbone.View.extend({
     tagName: 'div',
 
-    id: 'page-pictures',
+    id: 'page-displays',
 
-    template: _.template($('#pictures-template').html()),
+    template: _.template($('#displays-template').html()),
 
     render: function(){
       $(this.el).html(this.template());

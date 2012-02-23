@@ -127,22 +127,22 @@ body  {
   margin-top: 5px;
 }
 
-/* menu */
+/* nav-menu */
 
-ul#menu {
+ul#nav-menu {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 0;
   border-width: 0;
 }
-ul#menu li {
+ul#nav-menu li {
   list-style-type: none;
   display: inline-block;
   border-width: 0;
   padding: 0;
 }
-ul#menu li a {
+ul#nav-menu li a {
   float: none;
   display: inline-block;
   text-decoration: none;
@@ -150,13 +150,13 @@ ul#menu li a {
   padding: 8px 15px;
   font: bold 14px "AlexandriaFLF", Helvetica;
 }
-ul#menu li a {
+ul#nav-menu li a {
   color: #ccc;
 }
-ul#menu li a:hover {
+ul#nav-menu li a:hover {
   color: #262626;
 }
-ul#menu li.current a {
+ul#nav-menu li.current a {
   color: #8b7355;
   font-weight: bold;
 }
