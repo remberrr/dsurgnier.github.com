@@ -209,37 +209,47 @@
     <!--   Resume  -->
     <script type='text/template' id='resume-template'>
       <div class='row-fluid'>
-        <div class='span12'>
-          <div class='tabbable tabs-left'>
-            <ul class='nav nav-tabs'>
-              <li class='active'><a href='#education' data-toggle='tab'>Education</a></li>
-              <li><a href='#employment' data-toggle='tab'>Employment</a></li>
-              <li><a href='#skills' data-toggle='tab'>Skills</a></li>
-              <li><a href='#coursework' data-toggle='tab'>Coursework</a></li>
-            </ul>
-            <div class='tab-content'>
-              <div class='tab-pane active' id='education'>
-                <h2>Education</h2>
-                <p>Auburn University, Auburn AL</p>
-                <p>May 2006 - August 2010</p>
-              </div>
-              <div class='tab-pane' id='employment'>
-                <h2>Employment</h2>
-                <h3>Sr. Associate / Standards Specialist</h3>
-                <p>May 2011-Current Anthropologie, 1115 NW Couch</p>
-                <p>Assist in opening and merchandising the home and apparel departments of Anthropologie, help create maintain visual displays, and assist customers on floor and at register.</p>
-              </div>
-              <div class='tab-pane' id='skills'>
-                <h2>Skills</h2>
-              </div>
-              <div class='tab-pane' id='coursework'>
-                <h2>Coursework</h2>
-              </div>
-            </div>
-          </div>
+        <div class='span2'>
+          <ul id='resume-menu'>
+            <li id='resume-sec-edu'><a href='#resume/education'>Education</a></li>
+            <li id='resume-sec-emp'><a href='#resume/employment'>Employment</a></li>
+            <li id='resume-sec-skills'><a href='#resume/skills'>Skills</a></li>
+            <li id='resume-sec-course'><a href='#resume/coursework'>Coursework</a></li>
+          </ul>
+        </div>
+        <div class='span8'>
+          <div id='resume-content'></div>
         </div>
       </div>
     </script>
+
+    <!--   Education  -->
+    <script type='text/template' id='education-template'>
+      <h2>Education</h2>
+      <p>Auburn University, Auburn AL</p>
+      <p>May 2006 - August 2010</p>
+    </script>
+
+    <!--   Employment  -->
+    <script type='text/template' id='employment-template'>
+      <h2>Employment</h2>
+      <h3>Sr. Associate / Standards Specialist</h3>
+      <p>May 2011-Current Anthropologie, 1115 NW Couch</p>
+      <p>Assist in opening and merchandising the home and apparel departments of Anthropologie, help create maintain visual displays, and assist customers on floor and at register.</p>
+    </script>
+
+    <!--   Skills  -->
+    <script type='text/template' id='skills-template'>
+      <h2>Skills</h2>
+      <p>stuff<p>
+    </script>
+
+    <!--   Coursework  -->
+    <script type='text/template' id='coursework-template'>
+      <h2>Coursework</h2>
+      <p>stuff<p>
+    </script>
+
   </body>
 </html>
 

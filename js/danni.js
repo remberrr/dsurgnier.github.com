@@ -46,22 +46,48 @@ $(function(){
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
+
+      var default_view = new EducationView;
+      $('#resume-content').hide();
+      $('#resume-content').html(default_view.render().el);
+      $('#resume-content').show();
+      $('#resume-sec-edu').addClass('current');
     },
 
     resumeMenu: function(section){
+      $('#resume-menu li').removeClass('current');
       switch(section){
         case 'employment':
-          alert('employment');
+          var view = new EmploymentView;
+          $('#resume-content').hide();
+          $('#resume-content').html(view.render().el);
+          $('#resume-content').show();
+          $('#resume-sec-emp').addClass('current');
           break;
-        case default:
+        case 'skills':
+          var view = new SkillsView;
+          $('#resume-content').hide();
+          $('#resume-content').html(view.render().el);
+          $('#resume-content').show();
+          $('#resume-sec-skills').addClass('current');
+          break;
+        case 'coursework':
+          var view = new CourseworkView;
+          $('#resume-content').hide();
+          $('#resume-content').html(view.render().el);
+          $('#resume-content').show();
+          $('#resume-sec-course').addClass('current');
+          break;
+        default:
         case 'education':
           var view = new EducationView;
           $('#resume-content').hide();
           $('#resume-content').html(view.render().el);
           $('#resume-content').show();
+          $('#resume-sec-edu').addClass('current');
           break;
       }
-    },
+    }
   });
 
   // Views
@@ -130,6 +156,61 @@ $(function(){
       return this;
     }
   });
+
+  window.EducationView = Backbone.View.extend({
+    tagName: 'div',
+
+    id: 'education',
+
+    template: _.template($('#education-template').html()),
+
+    render: function(){
+      $(this.el).html(this.template());
+      return this;
+    }
+  });
+
+  window.EmploymentView = Backbone.View.extend({
+    tagName: 'div',
+
+    id: 'employment',
+
+    template: _.template($('#employment-template').html()),
+
+    render: function(){
+      $(this.el).html(this.template());
+      return this;
+    }
+  });
+
+
+  window.SkillsView = Backbone.View.extend({
+    tagName: 'div',
+
+    id: 'skills',
+
+    template: _.template($('#skills-template').html()),
+
+    render: function(){
+      $(this.el).html(this.template());
+      return this;
+    }
+  });
+
+  window.CourseworkView = Backbone.View.extend({
+    tagName: 'div',
+
+    id: 'coursework',
+
+    template: _.template($('#coursework-template').html()),
+
+    render: function(){
+      $(this.el).html(this.template());
+      return this;
+    }
+  });
+
+
 
   window.workspace = new Workspace();
   Backbone.history.start();

@@ -33,9 +33,9 @@ body  {
 #header {
   width: 85%;
   height: 50px;
-  margin: 10px auto 20px;
+  margin: 20px auto 20px;
   position: relative;
-  padding: 10px;
+  padding: 0;
 }
 #header .title {
   text-align: center;
@@ -131,6 +131,7 @@ body  {
 
 ul#menu {
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 40px;
   padding: 0;
   border-width: 0;
@@ -148,9 +149,6 @@ ul#menu li a {
   border-width: 0;
   padding: 8px 15px;
   font: bold 14px "AlexandriaFLF", Helvetica;
-  /*font: bold 14px Lucida Grande, Verdana;*/
-  /*text-transform: uppercase;*/
-  /*text-shadow: 0 1px 0 rgba(0,0,0,.6);*/
 }
 ul#menu li a {
   color: #ccc;
@@ -158,15 +156,42 @@ ul#menu li a {
 ul#menu li a:hover {
   color: #262626;
 }
-ul#menu li.current {
-  /*background: #88b026;*/
-  /*border-bottom: 5px solid #145570;*/
-}
 ul#menu li.current a {
   color: #8b7355;
   font-weight: bold;
-  /*border-bottom: 1px solid rgba(255,255,255,.4);*/
-  /*text-shadow: 0 1px 0 rgba(255,255,255,.6);*/
+}
+
+/* resume menu */
+
+ul#resume-menu {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0;
+  border-width: 0;
+}
+ul#resume-menu li {
+  list-style-type: none;
+  display: inline-block;
+  border-width: 0;
+  padding: 0;
+}
+ul#resume-menu li a {
+  float: none;
+  display: inline-block;
+  text-decoration: none;
+  border-width: 0;
+  padding: 8px 15px;
+  font: bold 14px "AlexandriaFLF", Helvetica;
+}
+ul#resume-menu li a {
+  color: #ccc;
+}
+ul#resume-menu li a:hover {
+  color: #262626;
+}
+ul#resume-menu li.current a {
+  color: #8b7355;
+  font-weight: bold;
 }
 
 /* home */
