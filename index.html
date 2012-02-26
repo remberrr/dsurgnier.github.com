@@ -73,34 +73,40 @@
 
     <!--   Home  -->
     <script type='text/template' id='home-template'>
-      <div id='header'>
-        <!--<a href='https://twitter.com/Danni_McG'>-->
-          <!--<img src='images/twitter_newbird_blue.png'>-->
-        <!--</a>-->
-        <!--<a href="https://twitter.com/Danni_McG" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Danni_McG</a>-->
-      </div>
+      <ul id='content'>
+        <li>
+          <a href='http://twitter.com/Danni_McG' target='_blank' class='icon'>
+            <img src='images/icons/twitter-2.png'>
+          </a>
+          <a href='http://linkedin.com/in/dannisurgnier' target='_blank' class='icon'>
+            <img src='images/icons/linkedin.png'>
+          </a>
+          <a href='http://october-country.tumblr.com' target='_blank' class='icon'>
+            <img src='images/icons/tumblr.png'>
+          </a>
+          <a href='http://dannisurgnier.blogspot.com' target='_blank' class='icon'>
+            <img src='images/icons/blogger.png'>
+          </a>
+        </li>
+      </ul>
     </script>
     <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 
     <!--   About  -->
     <script type='text/template' id='about-template'>
       <div class='row-fluid'>
-        <div class='text-block'>
-          <h2>Hello and welcome to my website!</h2>
-          <p>My name is Danni Surgnier, I'm an Auburn Univerity Alum with a B.S. in Apparel Merchandising, Design and Production Management with a focus in design. I'm a native Oregonian but spent my high school and college years in Alabama. I'm extremely happy to be back home and love living in NE Portland with my husband, cat, and dog.</p>
-        </div>
+        <ul id='content'>
+          <li style='max-width:480px'>
+            <h2 style='text-align:center'>Hello and welcome to my website!</h2>
+            <p>My name is Danni Surgnier, I'm an Auburn Univerity Alum with a B.S. in Apparel Merchandising, Design and Production Management with a focus in design. I'm a native Oregonian but spent my high school and college years in Alabama. I'm extremely happy to be back home and love living in NE Portland with my husband, cat, and dog.</p>
+          </li>
+        </ul>
       </div>
       <div class='row-fluid'>
         <ul id='content'>
           <li>
-            <a href='#' class='thumbnail'>
-              <img src='images/thumbs/Os.jpg'>
-            </a>
-          </li>
-          <li>
-            <a href='#' class='thumbnail'>
-              <img src='images/thumbs/kitty.jpg'>
-            </a>
+            <img src='images/thumbs/Os.jpg' class='animals'>
+            <img src='images/thumbs/kitty.jpg' class='animals'>
           </li>
         </ul>
       </div>
@@ -112,62 +118,46 @@
       <div id='palazzo-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Global Nomad</h3>
         </div>
         <div class='modal-body'><img src='images/Palazzo.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
+        <!--<div class='modal-footer'>-->
         </div>
       </div>
       <div id='dress-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Snow Bunny</h3>
         </div>
         <div class='modal-body'><img src='images/Dress.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
-        </div>
       </div>
       <div id='infinityscarf-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Wayfarer</h3>
         </div>
         <div class='modal-body'><img src='images/InfinityScarf.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
-        </div>
       </div>
       <div id='prairie-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Prairie Mondern</h3>
         </div>
         <div class='modal-body'><img src='images/Prairie.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
-        </div>
       </div>
       <div id='scarf-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Sartorial Layers</h3>
         </div>
         <div class='modal-body'><img src='images/Scarf.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
-        </div>
       </div>
       <div id='sweater-modal' class='modal hide fade'>
         <div class='modal-header'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Window display at Anthropolgie</h3>
+          <h3>Wanderlust</h3>
         </div>
         <div class='modal-body'><img src='images/Sweater.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the photo</h4>
-        </div>
       </div>
 
       <ul class='thumbnails'>
@@ -208,104 +198,104 @@
     <script type='text/template' id='designs-template'>
       <!--modal content-->
       <div id='girls1-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls1.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girls2-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls2.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girls3-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls3.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girls4-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls4.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl1-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl1.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl2-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl2.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl3-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl3.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl4-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl4.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
       <div id='girl5-modal' class='modal hide fade'>
-        <div class='modal-header'>
+        <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
-          <h3>Hand Drawn Title</h3>
+          <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl5.jpg'></div>
-        <div class='modal-footer'>
-          <h4>Comments about the drawing</h4>
-        </div>
+        <!--<div class='modal-footer'>-->
+          <!--<h4>Comments about the drawing</h4>-->
+        <!--</div>-->
       </div>
 
       <ul class='thumbnails'>
@@ -403,7 +393,11 @@
           <h5>May 2011 - Current</h5>
           <ul>
             <li>Assist in opening and merchandising the home and apparel departments of Anthropologie, help create maintain visual displays, and assist customers on floor and at register.</li>
-          </ul><br>
+          </ul>
+        </div>
+      </div>
+      <div class='span4'>
+        <div id='resume-block' style='margin-top:53px'>
           <h3>Seamstress / Intern</h3>
           <h5><i>Sown Design, 727 SE Morrison</i><h5>
           <h5>May 2010 - Spetember 2010</h5>
@@ -432,6 +426,28 @@
                 <li>Sketching garments
                 <li>Designing a store
                 <li>Sewing garment prototypes
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='span4'>
+        <div id='resume-block' style='margin-top:53px'>
+          <h3>Merchandising</h3><br>
+          <ul>
+            <li>In-store Display
+            <li>Window Display
+            <li>Set Construction
+              <ul style='padding-left:40px'>
+                <li>Power tools</li>
+              </ul>
+            <li>Apparel Visual Standards
+              <ul style='padding-left:40px'>
+                <li>Steaming
+                <li>Ironing
+                <li>Pinning
+                <li>Weighting
+                </li>
               </ul>
             </li>
           </ul>

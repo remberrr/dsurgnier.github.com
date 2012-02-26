@@ -48,14 +48,18 @@ $(function(){
       $('#nav-menu li').removeClass('current');
       $('#nav-about').addClass('current');
     },
-    
-    toResume: function(){
+
+    resume: function(){
       var view = new ResumeView;
       $('#page').hide();
       $('#page').html(view.render().el);
       $('#page').show();
       $('#nav-menu li').removeClass('current');
       $('#nav-resume').addClass('current');
+    },
+    
+    toResume: function(){
+      this.resume();
 
       var default_view = new EducationView;
       $('#resume-content').hide();
@@ -65,6 +69,7 @@ $(function(){
     },
 
     resumeMenu: function(section){
+      this.resume();
       $('#resume-menu li').removeClass('current');
       switch(section){
         case 'employment':
