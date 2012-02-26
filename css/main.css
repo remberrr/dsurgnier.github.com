@@ -1,12 +1,4 @@
 @font-face {
-	font-family: 'ChunkFiveRegular';
-	src: url('../fonts/Chunkfive-webfont.eot');
-	src: local('☺'), url('../fonts/Chunkfive-webfont.woff') format('woff'), url('../fonts/Chunkfive-webfont.ttf') format('truetype'), url('../fonts/Chunkfive-webfont.svg#webfont4CzPTNtF') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
   font-family: 'AlexandriaFLF';
   src: url('../fonts/AlexandriaFLF.ttf');
 }
@@ -14,7 +6,8 @@
 body {
   background: #f9f9f9;
   color: #8b7355;
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;*/
+  font-family: 'AlexandriaFLF','Helvetica Neue',Arial,sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding-left: 0;
@@ -47,7 +40,7 @@ a.icon:hover {
 }
 
 #header {
-  font-family: 'AlexandriaFLF', 'Helvetica Neue';
+  font-family: 'AlexandriaFLF','Helvetica Neue',Arial,sans-serif;
   margin: 40px auto 10px;
   padding: 0;
   text-align: center;
@@ -60,6 +53,9 @@ a.icon:hover {
   text-decoration: none;
 }
 
+#content p {
+  font-family: 'AlexandriaFLF','Helvetica Neue',Arial,sans-serif;
+}
 ul#content {
   text-align: center;
   padding: 0;

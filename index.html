@@ -208,15 +208,19 @@
     <!--   Designs  -->
     <script type='text/template' id='designs-template'>
       <!--modal content-->
+      <div id='girls-modal' class='modal hide fade'>
+        <div class='modal-header-noborder'>
+          <a class='close' data-dismiss='modal'>×</a>
+          <!--<h3>Hand Drawn Title</h3>-->
+        </div>
+        <div class='modal-body'><img src='images/Girls.jpg'></div>
+      </div>
       <div id='girls1-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
           <a class='close' data-dismiss='modal'>×</a>
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls1.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girls2-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -224,9 +228,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls2.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girls3-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -234,9 +235,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls3.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girls4-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -244,9 +242,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girls4.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -254,9 +249,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl1-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -264,9 +256,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl1.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl2-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -274,9 +263,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl2.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl3-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -284,9 +270,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl3.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl4-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -294,9 +277,6 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl4.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
       <div id='girl5-modal' class='modal hide fade'>
         <div class='modal-header-noborder'>
@@ -304,12 +284,14 @@
           <!--<h3>Hand Drawn Title</h3>-->
         </div>
         <div class='modal-body'><img src='images/Girl5.jpg'></div>
-        <!--<div class='modal-footer'>-->
-          <!--<h4>Comments about the drawing</h4>-->
-        <!--</div>-->
       </div>
 
       <ul class='thumbnails'>
+        <li class='span3'>
+          <a href='#girls-modal' class='thumbnail' data-toggle='modal'>
+            <img src='images/thumbs/Girls.jpg'>
+          </a>
+        </li>
         <li class='span3'>
           <a href='#girls1-modal' class='thumbnail' data-toggle='modal'>
             <img src='images/thumbs/Girls1.jpg'>
@@ -447,7 +429,7 @@
       </div>
       <div class='span4'>
         <div id='resume-block' style='margin-top:53px'>
-          <h3>Merchandising</h3><br>
+          <h3>Merchandising</h3>
           <ul>
             <li>In-store Display
             <li>Window Display
