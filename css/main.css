@@ -158,10 +158,10 @@ ul#resume-menu li.current a {
   width: 85%;
 }
 #footer a {
-  color: #262626;
+  color: #002b36;
   text-shadow: none;
   text-decoration: none;
-  border-bottom: 1px dotted #262626;
+  border-bottom: 1px dotted #002b36;
 }
 #footer a:hover {
   border-bottom-style: solid;
